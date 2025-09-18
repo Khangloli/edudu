@@ -1,0 +1,25 @@
+@{
+    Layout = null;
+    var title = ViewBag.Title ?? "Đăng nhập hệ thống";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>@title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <!-- CSS login -->
+    <link rel="stylesheet" href="~/Content/login.css" />
+</head>
+<body>
+    <div class="login-wrapper">
+        @RenderBody()
+    </div>
+
+    <!-- Script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
